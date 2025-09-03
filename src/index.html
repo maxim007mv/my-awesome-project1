@@ -1,15 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="icon" href="https://i.ibb.co/k2L5vJf3/istockphoto-866548756-612x612.jpg" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная - Топовый Сайт</title>
+  <meta name="description" content="Краткое описание главной страницы вашего сайта">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  </style>
 </head>
-<body class="bg-color-red">
-    <div>
-        <h1 class="text-red-800 text-center">привет всем </h1>
+<body class="bg-gray-900 text-gray-200 font-sans">
+
+  <!-- Шапка сайта -->
+  <header class="bg-gray-900 bg-opacity-90 shadow-md sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <a href="index.html" class="text-2xl font-bold text-orange-400 hover:text-orange-500 transition">Топовый Сайт</a>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="index.html" class="hover:text-orange-400 transition font-semibold">Главная</a></li>
+          <li><a href="about.html" class="hover:text-orange-400 transition">О нас</a></li>
+          <li><a href="contacts.html" class="hover:text-orange-400 transition">Контакты</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
+
+  <!-- Основное содержимое -->
+  <main class="container mx-auto py-10 px-6">
+
+    <h1 class="text-4xl font-bold mb-8 text-center text-orange-400">Добро пожаловать на наш сайт!</h1>
+
+    <!-- Секция Услуги -->
+    <section id="services" class="glass mb-12 p-8 shadow-lg">
+      <h2 class="text-2xl font-semibold mb-4 text-orange-300">Наши услуги</h2>
+      <p class="mb-4 leading-relaxed">
+        Мы предлагаем полный спектр веб-услуг: разработку сайтов, поддержку и оптимизацию, создание уникального дизайна и интеграцию с современными сервисами.
+      </p>
+      <a href="#contacts" class="inline-block bg-orange-600 text-white px-4 py-2 rounded hover:bg-orange-700 transition">Связаться с нами</a>
+    </section>
+
+    <!-- Секция Портфолио -->
+    <section id="portfolio" class="glass mb-12 p-8 shadow-lg">
+      <h2 class="text-2xl font-semibold mb-4 text-orange-300">Портфолио</h2>
+      <p class="leading-relaxed">
+        Примеры наших работ включают современные сайты для бизнеса, интернет-магазины и уникальные креативные проекты, которые помогают клиентам выделяться на рынке.
+      </p>
+    </section>
+
+    <!-- Секция Контакты -->
+    <section id="contacts" class="glass mb-12 p-8 shadow-lg">
+      <h2 class="text-2xl font-semibold mb-4 text-orange-300">Контактная информация</h2>
+      <p class="leading-relaxed">Вы можете связаться с нами по телефону или через форму обратной связи на странице контактов.</p>
+      <a href="contacts.html" class="inline-block mt-2 text-orange-400 hover:underline">Подробнее</a>
+    </section>
+
+  </main>
+
+  <!-- Подвал -->
+  <footer class="bg-gray-800 border-t border-gray-700 py-6">
+    <div class="container mx-auto px-6 text-center text-orange-300">
+      <p>&copy; 2025 Топовый Сайт. Все права защищены.</p>
+      <p>Телефон: +8 (800) 555-35-35</p>
+    </div>
+  </footer>
+
 </body>
 </html>

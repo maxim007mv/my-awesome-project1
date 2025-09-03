@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О нас - Название вашего сайта</title>
+  <meta name="description" content="Узнайте больше о нашей компании и истории">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Glassmorphism фон для секций */
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-200 font-sans">
+
+  <!-- Шапка сайта -->
+  <header class="bg-gray-900 bg-opacity-90 shadow-md sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <a href="index.html" class="text-2xl font-bold text-orange-400 hover:text-orange-500 transition">Топовый сайт</a>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="index.html" class="hover:text-orange-400 transition">Главная</a></li>
+          <li><a href="about.html" class="hover:text-orange-400 transition font-semibold">О нас</a></li>
+          <li><a href="contacts.html" class="hover:text-orange-400 transition">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Основное содержимое -->
+  <main class="container mx-auto py-10 px-6">
+
+    <!-- Хлебные крошки -->
+    <nav class="text-gray-400 mb-6 text-sm" aria-label="Хлебные крошки">
+      <a href="index.html" class="hover:text-orange-400 transition">Главная</a> →
+      <span class="text-gray-200 font-medium">О нас</span>
+    </nav>
+
+    <!-- Заголовок страницы -->
+    <h1 class="text-4xl font-bold mb-8 text-orange-400 text-center">О нашей компании</h1>
+
+    <!-- Секция "Наша история" -->
+    <section class="glass mb-8 p-8 shadow-lg">
+      <h2 class="text-2xl font-semibold mb-4 text-orange-300">Наша история</h2>
+      <p class="text-gray-200 leading-relaxed">
+        Компания "TechNova" была основана в 2015 году группой энтузиастов, стремящихся создавать современные и удобные веб-решения для бизнеса. Всё начиналось в небольшой студии с командой из пяти человек, которые работали над локальными проектами для малого бизнеса.  
+        <br><br>
+        Уже в 2017 году мы расширились, открыли офис в другом городе и начали сотрудничать с крупными клиентами по всему миру. Наша цель с самого начала — делать цифровые продукты, которые просты, красивы и функциональны. Сегодня в команде более 50 профессионалов, и мы продолжаем развивать инновационные решения для наших клиентов.
+      </p>
+    </section>
+
+    <!-- Секция "Наша команда" -->
+    <section class="glass mb-8 p-8 shadow-lg">
+      <h2 class="text-2xl font-semibold mb-4 text-orange-300">Наша команда</h2>
+      <p class="text-gray-200 leading-relaxed">
+        Наша команда состоит из дизайнеров, разработчиков, проектных менеджеров и маркетологов, объединённых одной целью — создавать продукты, которыми гордятся наши клиенты. Мы ценим инновации, креативность и командную работу, и каждый член нашей команды вносит свой уникальный вклад в развитие компании.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Подвал -->
+  <footer class="bg-gray-800 border-t border-gray-700 py-6 mt-12">
+    <div class="container mx-auto px-6 text-center text-gray-400">
+      <p>&copy; 2025 Топовый Сайт. Все права защищены.</p>
+      <p>Телефон: +8 (800) 555-35-35</p>
+    </div>
+  </footer>
+
+</body>
+</html>
